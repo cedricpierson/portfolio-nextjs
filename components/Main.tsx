@@ -30,11 +30,11 @@ const Main = () => {
             <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
               <FaGithub />
             </div>
-            <a href="/#contact">
+            <Link href="/#contact">
               <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                 <AiOutlineMail />
               </div>
-            </a>
+            </Link>
             <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
               <BsFillPersonLinesFill />
             </div>
