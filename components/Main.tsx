@@ -14,7 +14,7 @@ const Main = () => {
             Construisons ensemble votre projet
           </p>
           <h1 className="py-4 text-gray-700">
-            <span className="text-[#a5d6a7]">Cédric PIERSON</span>
+            <span className="text-[#5651e5]">Cédric PIERSON</span>
           </h1>
           <h1 className="py-2 text-gray-700">Développeur Web Front-End</h1>
           <p className="py-4 text-gray-600 max-w-[70%] m-auto">
