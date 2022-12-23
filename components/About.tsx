@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+import Link from "next/link";
 import React from "react";
 
 const About = () => {
@@ -17,14 +18,19 @@ const About = () => {
             qu’un savoir faire dans l’enseignement et les disciplines
             artistiques.
           </p>
+          Actuellement je suis une formation professionnelle sur React + Next
+          JS, MUI, Express, et me forme à mon compte sur Typescript, Cypress,
+          Tailwind, Framer Motion.
           <p className="py-2 text-gray-600">
             Je suis sensible à l’ergonomie, la praticité et l’aspect ludique
             d’une interface, et souhaiterais explorer par la suite le
             développement applicatif.{" "}
           </p>
-          <p className="py-2 text-gray-600 underline cursor-pointer">
-            Découvrez mes derniers projets.
-          </p>
+          <Link href="/#projects">
+            <p className="py-2 text-gray-600 underline cursor-pointer">
+              Découvrez mes derniers projets.
+            </p>
+          </Link>
         </div>
         <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300 ">
           <img className=" rounded-xl" src="assets/about.jpg" />

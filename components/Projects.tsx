@@ -2,39 +2,43 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import ProjectItem from "./ProjectItem";
-import propertyImg from "../public/assets/projects/property.jpg";
-import cryptoImg from "../public/assets/projects/crypto.jpg";
-import netflixImg from "../public/assets/projects/netflix.jpg";
-import twitchImg from "../public/assets/projects/twitch.jpg";
+import yoleImg from "../public/assets/projects/yole.jpg";
+import apneaImg from "../public/assets/projects/apnea.jpg";
+import partyImg from "../public/assets/projects/party.jpg";
+import knImg from "../public/assets/projects/kn.jpg";
 
 const Projects = () => {
   return (
     <div id="projects" className="w-full">
       <div className="max-w-[1240px] mx-auto px-2 py-16 ">
-        <p className="text-xl tracking-widest uppercase text-[#5651e5">
+        <p className="text-xl tracking-widest uppercase text-[#5651e5]">
           Projets
         </p>
         <h2 className="py-4">Mes créations</h2>
         <div className="grid md:grid-cols-2 gap-8">
           <ProjectItem
-            title="Property Finder"
-            backgroundImg={propertyImg}
-            projectUrl="/property"
+            title="Y Olé Flamenco"
+            backgroundImg={yoleImg}
+            projectUrl="/yole"
+            stack="Joomla UIkit"
           />
           <ProjectItem
-            title="Crypto App"
-            backgroundImg={cryptoImg}
-            projectUrl="/crypto"
+            title="APNEA"
+            backgroundImg={apneaImg}
+            projectUrl="/apnea"
+            stack="React MUI"
           />
           <ProjectItem
-            title="Netflix App"
-            backgroundImg={netflixImg}
-            projectUrl="/netflix"
+            title="Party Place App"
+            backgroundImg={partyImg}
+            projectUrl="/party-place"
+            stack="React MUI Spotify API"
           />
           <ProjectItem
-            title="Twitch UI"
-            backgroundImg={twitchImg}
-            projectUrl="/twitch"
+            title="Karmanota"
+            backgroundImg={knImg}
+            projectUrl="/karmanota"
+            stack="Joomla UIkit"
           />
         </div>
       </div>

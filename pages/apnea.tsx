@@ -1,11 +1,11 @@
 import Image from "next/image";
 import React from "react";
-import twitchImg from "../public/assets/projects/twitch.jpg";
+import apneaImg from "../public/assets/projects/apnea.jpg";
 
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 
-const Twitch = () => {
+const Apnea = () => {
   return (
     <div className="w-full">
       <div className="w-screen h-[30vh] lg:h-[40vh] relative">
@@ -14,12 +14,12 @@ const Twitch = () => {
           className="absolute z-1"
           layout="fill"
           objectFit="cover"
-          src={twitchImg}
+          src={apneaImg}
           alt="/"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2 ">
-          <h2 className="py-2">Twitch App</h2>
-          <h3>React JS / Tailwind / Firebase</h3>
+          <h2 className="py-2">APNEA</h2>
+          <h3>React JS / MUI / Vercel</h3>
         </div>
       </div>
 
@@ -28,17 +28,18 @@ const Twitch = () => {
           <p>Projet</p>
           <h2>Description</h2>
           <p>
-            This app was built using React JS and is hosted on Firebase. Users
-            are able to search properties based on an Address, City, or ZIP code
-            to retrieve a list of active properties currently for sale. You will
-            be able to view property information as well as the specific
-            location of the property integrated with the Google Maps API. User
-            authentication is available so you can signup and signin to your
-            account with an email address in order to save your favorite
-            properties. This is made possible with Zillow API.
+            APNEA est le résultat d'un hackathon de 24h. Réalisé avec React +
+            MUI et déployé sur Vercel, le principe est de générer une
+            destination et les informations correspondantes sur la qualité de
+            l'air, particules fines et température ainsi que l'empreinte carbone
+            pour y voyager en avion. L'app fait appel à 5 APIs différentes.
           </p>
-          <button className="px-8 py-2 mt-4 mr-8">Code</button>
-          <button className="px-8 py-2 mt-4">Demo</button>
+          <Link href="https://github.com/cedricpierson/apnea">
+            <button className="px-8 py-2 mt-4 mr-8">Code</button>
+          </Link>
+          <Link href="https://apnea.vercel.app/">
+            <button className="px-8 py-2 mt-4">Demo</button>
+          </Link>
         </div>
         <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4">
           <div className="p-2">
@@ -79,4 +80,4 @@ const Twitch = () => {
   );
 };
 
-export default Twitch;
+export default Apnea;
