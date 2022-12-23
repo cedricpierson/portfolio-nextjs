@@ -27,11 +27,11 @@ const YOle = () => {
           <p>Projet</p>
           <h2>Description</h2>
           <p>
-            Le site de l'école de Famenco Y Olé basée à Schiltigheim. Deuxième
-            version du site en Joomla. La mise en beauté avec UIkit. Épaulé par
-            CPanel pour gérer le back-office. Un grand nombre de widgets medias,
-            formulaires, cartes. Gestion des inscriptions à travers
-            l'intégration du CRM Assoconnect.
+            Le site de l&apos;école de Flamenco Y Olé basée à Schiltigheim.
+            Deuxième version du site en Joomla. La mise en beauté avec UIkit.
+            Épaulé par CPanel pour gérer le back-office. Un grand nombre de
+            widgets medias, formulaires, cartes. Gestion des inscriptions à
+            travers l&apos;intégration du CRM Assoconnect.
           </p>
           <Link href="https://www.y-ole.com/">
             <button className="px-8 py-2 mt-4">Demo</button>

@@ -28,11 +28,12 @@ const Apnea = () => {
           <p>Projet</p>
           <h2>Description</h2>
           <p>
-            APNEA est le résultat d'un hackathon de 24h. Réalisé avec React +
-            MUI et déployé sur Vercel, le principe est de générer une
+            APNEA est le résultat d&apos;un hackathon de 24h. Réalisé avec React
+            + MUI et déployé sur Vercel, le principe est de générer une
             destination et les informations correspondantes sur la qualité de
-            l'air, particules fines et température ainsi que l'empreinte carbone
-            pour y voyager en avion. L'app fait appel à 5 APIs différentes.
+            l&apos;air, particules fines et température ainsi que
+            l&apos;empreinte carbone pour y voyager en avion. L&apos;app fait
+            appel à 5 APIs différentes.
           </p>
           <Link href="https://github.com/cedricpierson/apnea">
             <button className="px-8 py-2 mt-4 mr-8">Code</button>

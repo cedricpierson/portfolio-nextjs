@@ -28,12 +28,13 @@ const PartyPlace = () => {
           <p>Projet</p>
           <h2>Description</h2>
           <p>
-            Projet autour de l'organisation de soirées thématiques autour du
-            monde avec 3 composants principaux: recette, cocktail et musique.
-            Utilisation du local storage pour personnaliser l'expérience,
+            Projet autour de l&apos;organisation de soirées thématiques autour
+            du monde avec 3 composants principaux: recette, cocktail et musique.
+            Utilisation du local storage pour personnaliser l&apos;expérience,
             utilisation de 2 APIs gratuites pour recettes et cocktails, ainsi
-            que de l'API Spotify couplé au lecteur intégré pour chercher des
-            playlists, ainsi qu'une playlist par défaut sur le thème choisi.
+            que de l&apos;API Spotify couplé au lecteur intégré pour chercher
+            des playlists, ainsi qu&apos;une playlist par défaut sur le thème
+            choisi.
           </p>
           <Link href="https://github.com/cedricpierson/party-place">
             <button className="px-8 py-2 mt-4 mr-8">Code</button>
