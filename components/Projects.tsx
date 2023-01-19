@@ -6,6 +6,8 @@ import yoleImg from "../public/assets/projects/yole.jpg";
 import apneaImg from "../public/assets/projects/apnea.jpg";
 import partyImg from "../public/assets/projects/party.jpg";
 import knImg from "../public/assets/projects/kn.jpg";
+import ytakImg from "../public/assets/projects/ytak.jpg";
+import wildcarsImg from "../public/assets/projects/wildcars.jpg";
 
 const Projects = () => {
   return (
@@ -16,6 +18,18 @@ const Projects = () => {
         </p>
         <h2 className="py-4">Mes créations</h2>
         <div className="grid md:grid-cols-2 gap-8">
+          <ProjectItem
+            title="YTAK"
+            backgroundImg={ytakImg}
+            projectUrl="/ytak"
+            stack="Next MUI"
+          />
+          <ProjectItem
+            title="WildCars"
+            backgroundImg={wildcarsImg}
+            projectUrl="/wildcars"
+            stack="Next MapBox"
+          />
           <ProjectItem
             title="Y Olé Flamenco"
             backgroundImg={yoleImg}
