@@ -8,6 +8,7 @@ const Skills = () => {
         <p className="text-xl tracking-widest uppercase text-[#519657]">
           Skills
         </p>
+
         <h2 className="py-4">Que puis-je faire?</h2>
         <div className=" grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="bg-white p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">

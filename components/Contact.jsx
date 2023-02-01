@@ -4,22 +4,25 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 import Link from "next/link";
+import Image from "next/image";
 
 const Contact = () => {
   return (
     <div id="contact" className="contact w-full lg:h-screen">
       <div className="max-w-[1240px] m-auto px-2 py-10 w-full ">
-        <p className="text-xl tracking-wider uppercase text-[#519657]">
-          Contact
+        <p className="text-xl tracking-wider uppercase before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-[#519657] relative inline-block">
+          <span className="relative text-white">Contact</span>
         </p>
         <h2 className="py-4">Un p'tit mail ;)</h2>
         <div className="grid lg:grid-cols-5 gap-8">
           <div className="bg-white col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
             <div className="lg:p-4 h-full">
               <div>
-                <img
+                <Image
+                  width={640}
+                  height={427}
                   className="rounded-xl hover:scale-105 ease-in duration-300"
-                  src="assets/contact2.jpg"
+                  src="/assets/contact2.jpg"
                   alt="/"
                 />
               </div>
@@ -44,7 +47,7 @@ const Contact = () => {
                     </div>
                   </Link>
                   <Link href="/#contact">
-                    <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                    <div className="rounded-full lg-none shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                       <AiOutlineMail />
                     </div>
                   </Link>

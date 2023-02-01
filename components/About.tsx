@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -7,8 +8,8 @@ const About = () => {
     <div id="about" className="w-full md:h-screen p-2 flex items-center py-16">
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
         <div className="col-span-2">
-          <p className="uppercase text-xl tracking-widest text-[#519657]">
-            À propos
+          <p className="text-xl tracking-wider uppercase before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-[#519657] relative inline-block">
+            <span className="relative text-white">À propos</span>
           </p>
           <h2 className="py-2 text-gray-600">Dans quelle étagère?</h2>
           <p className="py-2 text-gray-600">
@@ -32,7 +33,12 @@ const About = () => {
           </Link>
         </div>
         <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-full flex items-center justify-center p-4 hover:scale-105 ease-in duration-300 ">
-          <img className=" rounded-xl" src="assets/Cédric-Dev.png" />
+          <Image
+            width={566}
+            height={566}
+            className=" rounded-xl"
+            src="/assets/Cédric-Dev.png"
+          />
         </div>
       </div>
     </div>

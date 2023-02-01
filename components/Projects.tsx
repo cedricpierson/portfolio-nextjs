@@ -13,8 +13,8 @@ const Projects = () => {
   return (
     <div id="projects" className="w-full">
       <div className="max-w-[1240px] mx-auto px-2 py-16 ">
-        <p className="text-xl tracking-widest uppercase text-[#519657]">
-          Projets
+        <p className="text-xl tracking-wider uppercase before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-[#519657] relative inline-block">
+          <span className="relative text-white">Projets</span>
         </p>
         <h2 className="py-4">Mes petites affaires</h2>
         <div className="grid md:grid-cols-2 gap-8">
