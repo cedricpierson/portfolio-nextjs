@@ -13,7 +13,7 @@ const Contact = () => {
         <p className="text-xl tracking-wider uppercase before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-[#519657] relative inline-block">
           <span className="relative text-white">Contact</span>
         </p>
-        <h2 className="py-4">Un p'tit mail ;)</h2>
+        <h2 className="py-4">Un p&apos;tit mail ;)</h2>
         <div className="grid lg:grid-cols-5 gap-8">
           <div className="bg-white col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
             <div className="lg:p-4 h-full">
@@ -33,7 +33,7 @@ const Contact = () => {
                 <p>On en parle?</p>
               </div>
               <div>
-                <p className="uppercase pt-8">+ d'infos</p>
+                <p className="uppercase pt-8">+ d&apos;infos</p>
 
                 <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
                   <Link href="https://www.linkedin.com/in/cedricpierson01/">
