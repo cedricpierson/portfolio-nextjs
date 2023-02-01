@@ -27,7 +27,29 @@ li {
 }
 
 button {
-  @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white
+  @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#7cce7f] to-[#519657] text-white
 }
 
+}
+
+.main {
+  background-color: #ffffff;
+  opacity: 1;
+  background-image:  radial-gradient(#a1bda1 1.1px, transparent 1.1px), radial-gradient(#a1bda1 1.1px, #ffffff 1.1px);
+  background-size: 44px 44px;
+  background-position: 0 0,22px 22px;
+}
+
+.skills {
+  background-color: #ffffff;
+  opacity: 1;
+  background: radial-gradient(circle, transparent 20%, #ffffff 20%, #ffffff 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #ffffff 20%, #ffffff 80%, transparent 80%, transparent) 20px 20px, linear-gradient(#a1bda1 1.6px, transparent 1.6px) 0 -0.8px, linear-gradient(90deg, #a1bda1 1.6px, #ffffff 1.6px) -0.8px 0;
+  background-size: 40px 40px, 40px 40px, 20px 20px, 20px 20px;
+}
+
+.contact {
+  background-color: #ffffff;
+  opacity: 1;
+  background-size: 26px 26px;
+  background-image:  repeating-linear-gradient(0deg, #a1bda1, #a1bda1 1.3px, #ffffff 1.3px, #ffffff);
 }

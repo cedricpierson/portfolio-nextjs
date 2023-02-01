@@ -13,10 +13,10 @@ const Projects = () => {
   return (
     <div id="projects" className="w-full">
       <div className="max-w-[1240px] mx-auto px-2 py-16 ">
-        <p className="text-xl tracking-widest uppercase text-[#5651e5]">
+        <p className="text-xl tracking-widest uppercase text-[#519657]">
           Projets
         </p>
-        <h2 className="py-4">Mes créations</h2>
+        <h2 className="py-4">Mes petites affaires</h2>
         <div className="grid md:grid-cols-2 gap-8">
           <ProjectItem
             title="YTAK"

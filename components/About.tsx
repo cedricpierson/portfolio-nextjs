@@ -7,20 +7,19 @@ const About = () => {
     <div id="about" className="w-full md:h-screen p-2 flex items-center py-16">
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
         <div className="col-span-2">
-          <p className="uppercase text-xl tracking-widest text-[#5651e5">
+          <p className="uppercase text-xl tracking-widest text-[#519657]">
             À propos
           </p>
-          <h2 className="py-2 text-gray-600">Qui je suis</h2>
+          <h2 className="py-2 text-gray-600">Dans quelle étagère?</h2>
           <p className="py-2 text-gray-600">
-            Musicien professionnel et webmaster au sein d'une école de danse de
-            l’Eurométropole de Strasbourg depuis plus de 11 ans, j’ai acquis des
-            connaissances en développement CMS, graphisme et web-design, ainsi
-            qu’un savoir faire dans l’enseignement et les disciplines
-            artistiques.
+            Développeur indépendant, webmaster et musicien professionnel au sein
+            d'une école de danse de l’Eurométropole de Strasbourg depuis plus de
+            11 ans, j’ai acquis des connaissances en développement Frontend JS,
+            CMS, graphisme et web-design, ainsi qu’un savoir faire dans
+            l’enseignement et les disciplines artistiques.
           </p>
-          Actuellement je suis une formation professionnelle sur React + Next
-          JS, MUI, Express, et me forme à mon compte sur Typescript, Cypress,
-          Tailwind, Framer Motion.
+          De formation professionnelle sur React + Next JS, MUI, Express, je me
+          forme à mon compte sur Typescript, Cypress, Tailwind, Framer Motion.
           <p className="py-2 text-gray-600">
             Je suis sensible à l’ergonomie, la praticité et l’aspect ludique
             d’une interface, et souhaiterais explorer par la suite le
@@ -32,8 +31,8 @@ const About = () => {
             </p>
           </Link>
         </div>
-        <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300 ">
-          <img className=" rounded-xl" src="assets/about.jpg" />
+        <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-full flex items-center justify-center p-4 hover:scale-105 ease-in duration-300 ">
+          <img className=" rounded-xl" src="assets/Cédric-Dev.png" />
         </div>
       </div>
     </div>
