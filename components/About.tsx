@@ -38,6 +38,7 @@ const About = () => {
             height={566}
             className=" rounded-xl"
             src="/assets/Cédric-Dev.png"
+            alt="Cédric PIERSON"
           />
         </div>
       </div>
