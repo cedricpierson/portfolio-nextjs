@@ -116,8 +116,8 @@ const Navbar = () => {
               </div>
             </div>
             <div className="border-b border-gray-300 my-4">
-              <p className="w-[85%] md:w-[90%] py-4">
-                Construisons ensemble votre projet
+              <p className="text-xl tracking-wider uppercase before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-[#519657] relative inline-block">
+                <span className="relative text-white">portfolio</span>
               </p>
             </div>
           </div>
@@ -150,8 +150,8 @@ const Navbar = () => {
               </Link>
             </ul>
             <div className="pt-40">
-              <p className="uppercase tracking-widest text-[#5651e5]">
-                Prenons contact
+              <p className="uppercase tracking-widest text-[#519657]">
+                + d&apos;infos
               </p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
                 <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
