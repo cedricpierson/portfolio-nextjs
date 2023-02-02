@@ -4,11 +4,6 @@ require("dotenv").config();
 sendgrid.setApiKey(process.env.NEXT_PUBLIC_SENDGRID_API_KEY);
 
 async function sendEmail(req, res) {
-  console.log(
-    req,
-    process.env.NEXT_PUBLIC_SENDGRID_API_KEY,
-    process.env.NEXT_PUBLIC_EMAIL_FROM
-  );
   try {
     const { email } = req.body;
     console.log(email);

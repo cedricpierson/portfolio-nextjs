@@ -22,6 +22,7 @@ const Contact = () => {
   const schema = Joi.object({
     name: Joi.string().alphanum().min(3).max(30).required(),
     subject: Joi.string().alphanum().min(3).max(50).required(),
+    phone: Joi.number().min(8).max(10),
     message: Joi.string().alphanum().min(3).max(245).required(),
 
     email: Joi.string()
@@ -34,7 +35,13 @@ const Contact = () => {
     message: "Erreur de saisie",
     email: "Invalide",
   });
-
+  schema.validate({
+    name: name,
+    subject: subject,
+    phone: phone,
+    message: message,
+    email: email,
+  });
   //   Form validation state
   const [errors, setErrors] = useState({});
 
@@ -108,7 +115,6 @@ const Contact = () => {
       setShowFailureMessage(false);
       setButtonText("Send");
     }
-    console.log(name, email, subject, message);
   };
 
   return (
@@ -168,11 +174,11 @@ const Contact = () => {
               <form className="color">
                 <div className="grid md:grid-cols-2 gap-4 w-full py-2">
                   <div className="flex flex-col">
-                    <label className="uppercase text-sm py-2">Nom</label>
+                    <label className="uppercase text-sm py-2">Nom*</label>
                     <input
-                      className=" border-2 rounded-lg p-3 flex border-gray-300 focus:outline-none focus:border-[#519657] focus:ring-1 focus:ring-[#519657]
-                      required disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
-                      invalid:border-pink-500 invalid:text-pink-600
+                      className="border-2 rounded-lg p-3 flex border-gray-300 focus:outline-none focus:border-[#519657] focus:ring-1 focus:ring-[#519657]
+                      disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
+                      required:border-pink-500 invalid:border-pink-500 invalid:text-pink-600
                       focus:invalid:border-pink-500 focus:invalid:ring-pink-500"
                       type="text"
                       value={name}
@@ -193,10 +199,11 @@ const Contact = () => {
                   </div>
                 </div>
                 <div className="flex flex-col py-2">
-                  <label className="uppercase text-sm py-2">Email</label>
+                  <label className="uppercase text-sm py-2">Email*</label>
                   <input
+                    required
                     className="border-2 rounded-lg p-3 flex border-gray-300 focus:outline-none focus:border-[#519657] focus:ring-1 focus:ring-[#519657]
-                    required disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
+                     disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
                     invalid:border-pink-500 invalid:text-pink-600
                     focus:invalid:border-pink-500 focus:invalid:ring-pink-500"
                     type="email"
@@ -205,7 +212,7 @@ const Contact = () => {
                   />
                 </div>
                 <div className="flex flex-col py-2">
-                  <label className="uppercase text-sm py-2">Objet</label>
+                  <label className="uppercase text-sm py-2">Objet*</label>
                   <input
                     className="border-2 rounded-lg p-3 flex border-gray-300 focus:outline-none focus:border-[#519657] focus:ring-1 focus:ring-[#519657]
                     required disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
@@ -217,7 +224,7 @@ const Contact = () => {
                   />
                 </div>
                 <div className="flex flex-col py-2">
-                  <label className="uppercase text-sm py-2">Message</label>
+                  <label className="uppercase text-sm py-2">Message*</label>
                   <textarea
                     className="border-2 rounded-lg p-3  border-gray-300 focus:outline-none focus:border-[#519657] focus:ring-1 focus:ring-[#519657]
                     required disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
