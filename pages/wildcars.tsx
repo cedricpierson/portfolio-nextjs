@@ -1,10 +1,11 @@
 import Image from "next/image";
 import React from "react";
-import propertyImg from "../public/assets/projects/property.jpg";
+import wildcarsImg from "../public/assets/projects/wildcars.jpg";
 
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
-const Property = () => {
+
+const Wildcars = () => {
   return (
     <div className="w-full">
       <div className="w-screen h-[30vh] lg:h-[40vh] relative">
@@ -13,12 +14,12 @@ const Property = () => {
           className="absolute z-1"
           layout="fill"
           objectFit="cover"
-          src={propertyImg}
+          src={wildcarsImg}
           alt="/"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2 ">
-          <h2 className="py-2">Property Finder</h2>
-          <h3>React JS / Tailwind / Firebase</h3>
+          <h2 className="py-2">WILDCARS</h2>
+          <h3>Next JS / MUI / MapBox</h3>
         </div>
       </div>
 
@@ -27,17 +28,19 @@ const Property = () => {
           <p>Projet</p>
           <h2>Description</h2>
           <p>
-            This app was built using React JS and is hosted on Firebase. Users
-            are able to search properties based on an Address, City, or ZIP code
-            to retrieve a list of active properties currently for sale. You will
-            be able to view property information as well as the specific
-            location of the property integrated with the Google Maps API. User
-            authentication is available so you can signup and signin to your
-            account with an email address in order to save your favorite
-            properties. This is made possible with Zillow API.
+            WildCars est le résultat d&apos;un hackathon de 48h en partenariat
+            avec AWS. Le résultat est une application de location de véhicule
+            avec géolocalisation, choix intuitif, authentification via Facebook,
+            back-office pour la flotte de véhicules via API.
           </p>
-          <button className="px-8 py-2 mt-4 mr-8">Code</button>
-          <button className="px-8 py-2 mt-4">Demo</button>
+          <Link href="https://github.com/cedricpierson/hackathon-CYG">
+            <button className="px-8 py-2 mt-4 mr-8">Code</button>
+          </Link>
+          <Link href="#">
+            <button className="px-8 py-2 mt-4">
+              Migration BDD en cours...
+            </button>
+          </Link>
         </div>
         <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4">
           <div className="p-2">
@@ -53,7 +56,7 @@ const Property = () => {
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" />
-                Tailwind
+                MUI
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" />
@@ -61,11 +64,15 @@ const Property = () => {
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" />
-                Firebase
+                MongoDB
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" />
-                Express
+                MapBox
+              </p>
+              <p className="text-gray-600 py-2 flex items-center">
+                <RiRadioButtonFill className="pr-1" />
+                DynamoDB
               </p>
             </div>
           </div>
@@ -78,4 +85,4 @@ const Property = () => {
   );
 };
 
-export default Property;
+export default Wildcars;

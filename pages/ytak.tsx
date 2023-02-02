@@ -1,11 +1,11 @@
 import Image from "next/image";
 import React from "react";
-import netflixImg from "../public/assets/projects/netflix.jpg";
+import ytakImg from "../public/assets/projects/ytak.jpg";
 
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 
-const Netflix = () => {
+const Ytak = () => {
   return (
     <div className="w-full">
       <div className="w-screen h-[30vh] lg:h-[40vh] relative">
@@ -14,12 +14,12 @@ const Netflix = () => {
           className="absolute z-1"
           layout="fill"
           objectFit="cover"
-          src={netflixImg}
+          src={ytakImg}
           alt="/"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2 ">
-          <h2 className="py-2">Netflix App</h2>
-          <h3>React JS / Tailwind / Firebase</h3>
+          <h2 className="py-2">YTAK</h2>
+          <h3>Next JS / MUI / Sequelize</h3>
         </div>
       </div>
 
@@ -28,17 +28,18 @@ const Netflix = () => {
           <p>Projet</p>
           <h2>Description</h2>
           <p>
-            This app was built using React JS and is hosted on Firebase. Users
-            are able to search properties based on an Address, City, or ZIP code
-            to retrieve a list of active properties currently for sale. You will
-            be able to view property information as well as the specific
-            location of the property integrated with the Google Maps API. User
-            authentication is available so you can signup and signin to your
-            account with an email address in order to save your favorite
-            properties. This is made possible with Zillow API.
+            Ytak est un projet de plateforme OTT sur les thèmes du développement
+            web, du travail indépendant et de la nature. Conçu en Fullstack, il
+            inclut le process signup-signin-signout d&apos;authentification et
+            le signin Google, ainsi qu&apos;un back-office CMS de gestion du
+            contenu et des utilisateurs.
           </p>
-          <button className="px-8 py-2 mt-4 mr-8">Code</button>
-          <button className="px-8 py-2 mt-4">Demo</button>
+          <Link href="https://github.com/WildCodeSchool/092022-project3-video-front">
+            <button className="px-8 py-2 mt-4 mr-8">Code</button>
+          </Link>
+          <Link href="#">
+            <button className="px-8 py-2 mt-4">Projet en cours...</button>
+          </Link>
         </div>
         <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4">
           <div className="p-2">
@@ -54,7 +55,7 @@ const Netflix = () => {
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" />
-                Tailwind
+                MUI
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" />
@@ -62,11 +63,15 @@ const Netflix = () => {
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" />
-                Firebase
+                Sequelize
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" />
-                Express
+                Architecture MVC
+              </p>
+              <p className="text-gray-600 py-2 flex items-center">
+                <RiRadioButtonFill className="pr-1" />
+                Formik+Yup
               </p>
             </div>
           </div>
@@ -79,4 +84,4 @@ const Netflix = () => {
   );
 };
 
-export default Netflix;
+export default Ytak;
