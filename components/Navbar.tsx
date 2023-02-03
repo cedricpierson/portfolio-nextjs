@@ -182,13 +182,13 @@ const Navbar = () => {
                   </Link>
                 </div>
                 <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <Link href="/">
-                    <AiOutlineMail />
+                  <Link href="/CV-Cédric-PIERSON-2023.pdf" target="blank">
+                    <div className="font-bold text-xs">CV</div>
                   </Link>
                 </div>
                 <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                   <Link href="/">
-                    <BsFillPersonLinesFill />
+                    <AiOutlineMail />
                   </Link>
                 </div>
               </div>
