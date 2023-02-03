@@ -37,6 +37,11 @@ const Main = () => {
                 <FaGithub />
               </div>
             </Link>
+            <Link href="/CV-Cédric-PIERSON-2023.pdf" target="blank">
+              <div className="font-bold text-sm bg-white rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                CV
+              </div>
+            </Link>
             <Link href="/#contact">
               <div className="bg-white rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                 <AiOutlineMail />

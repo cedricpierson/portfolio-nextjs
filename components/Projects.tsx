@@ -3,6 +3,7 @@ import Link from "next/link";
 import React from "react";
 import ProjectItem from "./ProjectItem";
 import yoleImg from "../public/assets/projects/yole.jpg";
+import Carousel from "./Carousel";
 import apneaImg from "../public/assets/projects/apnea.jpg";
 import partyImg from "../public/assets/projects/party.jpg";
 import knImg from "../public/assets/projects/kn.jpg";
