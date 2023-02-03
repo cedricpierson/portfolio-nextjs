@@ -9,7 +9,7 @@ import { useRouter } from "next/router";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
-  const [navBg, setNavBg] = useState("#ecf0f3");
+  const [navBg, setNavBg] = useState("#fff");
   const [linkColor, setLinkColor] = useState("#1f2937");
   const router = useRouter();
 
@@ -21,9 +21,9 @@ const Navbar = () => {
       router.asPath === "/twitch"
     ) {
       setNavBg("transparent");
-      setLinkColor("#ecf0f3");
+      setLinkColor("#fff");
     } else {
-      setNavBg("#ecf0f3");
+      setNavBg("#fff");
       setLinkColor("#1f2937");
     }
   }, [router]);
@@ -56,7 +56,7 @@ const Navbar = () => {
         <Link href="/">
           <Image
             src="/assets/navLogo.png"
-            alt="/"
+            alt="Logo"
             width="125"
             height="50"
             className="cursor-pointer hover:scale-105 ease-in duration-300"
@@ -65,25 +65,27 @@ const Navbar = () => {
         <div>
           <ul style={{ color: `${linkColor}` }} className="hidden md:flex">
             <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b">
+              <li className="ml-10 text-sm uppercase hover:text-[#519657]">
                 Accueil
               </li>
             </Link>
             <Link href="/#about">
-              <li className="ml-10 text-sm uppercase hover:border-b">
+              <li className="ml-10 text-sm uppercase hover:text-[#519657]">
                 À propos
               </li>
             </Link>
             <Link href="/#skills">
-              <li className="ml-10 text-sm uppercase hover:border-b">Skills</li>
+              <li className="ml-10 text-sm uppercase hover:text-[#519657]">
+                Skills
+              </li>
             </Link>
             <Link href="/#projects">
-              <li className="ml-10 text-sm uppercase hover:border-b">
+              <li className="ml-10 text-sm uppercase hover:text-[#519657]">
                 Projets
               </li>
             </Link>
             <Link href="/#contact">
-              <li className="ml-10 text-sm uppercase hover:border-b">
+              <li className="ml-10 text-sm uppercase hover:text-[#519657]">
                 Contact
               </li>
             </Link>
@@ -112,7 +114,7 @@ const Navbar = () => {
                 onClick={handleNav}
                 className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
               >
-                <AiOutlineClose />
+                <AiOutlineClose className=" hover:scale-105 ease-in duration-300" />
               </div>
             </div>
             <div className="border-b border-gray-300 my-4">
@@ -124,27 +126,42 @@ const Navbar = () => {
           <div className="py-4 flex flex-col">
             <ul className="uppercase">
               <Link href="/">
-                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                <li
+                  onClick={() => setNav(false)}
+                  className="py-4 text-sm hover:text-[#519657]"
+                >
                   Accueil
                 </li>
               </Link>
               <Link href="/#about">
-                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                <li
+                  onClick={() => setNav(false)}
+                  className="py-4 text-sm hover:text-[#519657]"
+                >
                   À propos
                 </li>
               </Link>
               <Link href="/#skills">
-                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                <li
+                  onClick={() => setNav(false)}
+                  className="py-4 text-sm hover:text-[#519657]"
+                >
                   Skills
                 </li>
               </Link>
               <Link href="/#projects">
-                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                <li
+                  onClick={() => setNav(false)}
+                  className="py-4 text-sm hover:text-[#519657]"
+                >
                   Projets
                 </li>
               </Link>
               <Link href="/#contact">
-                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                <li
+                  onClick={() => setNav(false)}
+                  className="py-4 text-sm hover:text-[#519657]"
+                >
                   Contacts
                 </li>
               </Link>

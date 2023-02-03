@@ -157,7 +157,7 @@ const Contact = () => {
                 <Image
                   width={640}
                   height={427}
-                  className="rounded-xl hover:scale-105 ease-in duration-300"
+                  className="rounded-xl"
                   src="/assets/contact2.jpg"
                   alt="/"
                 />
@@ -212,7 +212,7 @@ const Contact = () => {
                       onChange={(e) => setName(e.target.value)}
                     />
                     {errors.name && (
-                      <p class="mt-2 text-sm text-red-600 dark:text-red-500">
+                      <p class="mt-2 text-sm text-pink-500 dark:text-pink-500">
                         Renseignez votre nom
                       </p>
                     )}
@@ -243,7 +243,7 @@ const Contact = () => {
                     onChange={(e) => setEmail(e.target.value)}
                   />
                   {errors.email && (
-                    <p class="mt-2 text-sm text-red-600 dark:text-red-500">
+                    <p class="mt-2 text-sm text-pink-500 dark:text-pink-500">
                       Rensignez votre email
                     </p>
                   )}
@@ -261,7 +261,7 @@ const Contact = () => {
                     onChange={(e) => setSubject(e.target.value)}
                   />
                   {errors.subject && (
-                    <p class="mt-2 text-sm text-red-600 dark:text-red-500">
+                    <p class="mt-2 text-sm text-pink-500 dark:text-pink-500">
                       Renseignez un objet
                     </p>
                   )}
@@ -279,7 +279,7 @@ const Contact = () => {
                     onChange={(e) => setMessage(e.target.value)}
                   ></textarea>
                   {errors.message && (
-                    <p class="mt-2 text-sm text-red-600 dark:text-red-500">
+                    <p class="mt-2 text-sm text-pink-500 dark:text-pink-500">
                       Ecrivez votre message
                     </p>
                   )}
