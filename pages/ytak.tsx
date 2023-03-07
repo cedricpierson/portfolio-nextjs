@@ -34,7 +34,7 @@ const Ytak = () => {
             le signin Google, ainsi qu&apos;un back-office CMS de gestion du
             contenu et des utilisateurs.
           </p>
-          <Link href="https://github.com/WildCodeSchool/092022-project3-video-front">
+          <Link href="https://github.com/cedricpierson/ytak">
             <button className="px-8 py-2 mt-4 mr-8">Code</button>
           </Link>
           <Link href="#">
